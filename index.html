@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <center class="container" id="contain">
+
+       
+        <div class="comment-section" id="comment-sec">
+            <div class="comment-header">
+                <div class="comment-number">
+                    <p class="comment-data" id="numb">0 Comments</p>
+                </div>
+                
+            </div>
+            <div class="comment-bar">
+                <div class="comment-bar-profile">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="comment-bar-box">
+                    <div class="comment-bar-type">
+                        <div data-placeholder="Add a comment..." onclick="typein()" oninput="typein()" id="commenttype" contenteditable="true"></div>
+                    </div>
+                    <div class="comment-bar-buttons">
+                        <button onclick="cancel()" id="commentcancel">Cancel</button>
+                        <input type="submit" value="Comment" id="commentinput">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer ">
+
+        </div>
+    </center>
+</body>
+<script src="index.js "></script>
+
+</html>
